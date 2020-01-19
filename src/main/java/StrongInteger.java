@@ -7,7 +7,7 @@ public class StrongInteger {
     }
 
     public int strongness() {
-        return strongness(integer, 0);
+        return (isZero() ? 1 : strongness(integer, 0));
     }
 
     private int strongness(int integer, int timesDividedBy2) {
@@ -21,5 +21,9 @@ public class StrongInteger {
 
     private static boolean isOdd(int number) {
         return number % 2 == 1;
+    }
+
+    private boolean isZero() {
+        return integer == 0;
     }
 }
