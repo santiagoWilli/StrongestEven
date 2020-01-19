@@ -33,7 +33,8 @@ public class StrongestEven_ {
                 {new int[]{2, 2}, null, StrongestEven.IllegalIntervalException.class},
                 {new int[]{1, 2}, 2, null},
                 {new int[]{2, 4}, 4, null},
-                //{new int[]{5, 10}, 8, null},
+                {new int[]{5, 10}, 8, null},
+                {new int[]{48, 56}, 48, null},
         };
     }
 }
