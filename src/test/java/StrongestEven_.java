@@ -31,6 +31,7 @@ public class StrongestEven_ {
         return new Object[][]{
                 {new int[]{4, 2}, null, StrongestEven.IllegalIntervalException.class},
                 {new int[]{1, 2}, 1, null},
+                {new int[]{2, 4}, 2, null},
         };
     }
 }
