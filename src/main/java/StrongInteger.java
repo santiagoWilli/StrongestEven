@@ -7,15 +7,19 @@ public class StrongInteger {
     }
 
     public int strongness() {
-        if (isOdd()) return 0;
-        return (integer == 4 || isTens() ? 2 : (integer == 8 ? 3 : 1));
+        return strongness(integer, 0);
     }
 
-    private boolean isTens() {
-        return String.valueOf(integer).length() == 2;
+    private int strongness(int integer, int timesDividedBy2) {
+        if (isOdd(integer)) return timesDividedBy2;
+        return strongness(integer/2, ++timesDividedBy2);
     }
 
     private boolean isOdd() {
         return integer % 2 == 1;
+    }
+
+    private static boolean isOdd(int number) {
+        return number % 2 == 1;
     }
 }
