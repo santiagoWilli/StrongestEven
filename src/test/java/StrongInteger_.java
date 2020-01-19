@@ -17,13 +17,14 @@ public class StrongInteger_ {
 
     @Test
     public void execute() {
-        assertThat(new StrongInteger(2).strongness()).isEqualTo(1);
+        assertThat(new StrongInteger(integer).strongness()).isEqualTo(strongness);
     }
 
     @Parameterized.Parameters
     public static Object[][] cases() {
         return new Object[][] {
                 {2, 1},
+                {4, 2},
         };
     }
 }

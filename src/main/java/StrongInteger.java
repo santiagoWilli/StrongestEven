@@ -7,6 +7,6 @@ public class StrongInteger {
     }
 
     public int strongness() {
-        return 1;
+        return (integer == 2 ? 1 : 2);
     }
 }
