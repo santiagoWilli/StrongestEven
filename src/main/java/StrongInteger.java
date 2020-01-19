@@ -8,7 +8,7 @@ public class StrongInteger {
 
     public int strongness() {
         if (this.isOdd()) return 0;
-        return (integer == 2 ? 1 : 2);
+        return (integer == 4 ? 2 : 1);
     }
 
     private boolean isOdd() {

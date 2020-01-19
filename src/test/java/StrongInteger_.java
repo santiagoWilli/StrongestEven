@@ -27,6 +27,7 @@ public class StrongInteger_ {
                 {4, 2},
                 {1, 0},
                 {3, 0},
+                {6, 1},
         };
     }
 }
