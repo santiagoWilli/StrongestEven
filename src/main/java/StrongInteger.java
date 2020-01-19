@@ -7,10 +7,6 @@ public class StrongInteger {
     }
 
     public int strongness() {
-        return strongness(integer, 0);
-    }
-
-    private int strongness(int number, int timesDividedBy2) {
         return 1;
     }
 }
