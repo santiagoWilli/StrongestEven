@@ -25,6 +25,7 @@ public class StrongInteger_ {
         return new Object[][] {
                 {2, 1},
                 {4, 2},
+                {1, 0},
         };
     }
 }
