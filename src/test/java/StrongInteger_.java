@@ -30,6 +30,7 @@ public class StrongInteger_ {
                 {6, 1},
                 {8, 3},
                 {12, 2},
+                {14, 2},
         };
     }
 }

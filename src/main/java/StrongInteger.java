@@ -7,8 +7,12 @@ public class StrongInteger {
     }
 
     public int strongness() {
-        if (this.isOdd()) return 0;
-        return (integer == 4 || integer == 12 ? 2 : (integer == 8 ? 3 : 1));
+        if (isOdd()) return 0;
+        return (integer == 4 || isTens() ? 2 : (integer == 8 ? 3 : 1));
+    }
+
+    private boolean isTens() {
+        return String.valueOf(integer).length() == 2;
     }
 
     private boolean isOdd() {
